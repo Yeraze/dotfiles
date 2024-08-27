@@ -1,0 +1,65 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Randall Hand
+email = randall.hand@gmail.com
+
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  co = checkout
+  ci = commit
+  conflicts = !git ls-files -u | cut -f 2 | sort -u
+  todo=grep --heading --break --ignore-case -e 'TODO:'
+  fix=grep --heading --break --ignore-case -e 'FIX:' -e 'FIXME:'
+  graph = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)\t%C(bold green)%d%C(reset) %C(white)%s%C(reset) - %C(bold white)%an%C(reset) %C(bold yellow)(%ar)%C(reset)' --all
+  hist = log --pretty=format:\"%C(bold blue)%h%C(reset) %C(bold yellow)%ad%C(reset) | %s%C(bold green)%d%C(reset) %C(bold white)[%an]%C(reset)\" --graph --date=short
+	trash = !mkdir -p .trash && git ls-files --others --exclude-standard | xargs mv -f -t .trash
+
+[color]
+	ui = auto
+
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[url "ssh://git@"]
+	insteadOf = git://
+[push]
+	autoSetupRemote = true
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    side-by-side = true
+
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+[init]
+	defaultBranch = main
