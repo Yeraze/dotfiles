@@ -1,5 +1,5 @@
 #. ~/.config/fish/functions/vi-mode.fish
-. ~/.config/fish/functions/prompt_src.fish
+#. ~/.config/fish/functions/prompt_src.fish
 set -g OS (uname)
 
 #function fish_user_keybindings # Deprecated
