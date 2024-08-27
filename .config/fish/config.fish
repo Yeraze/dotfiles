@@ -34,3 +34,4 @@ fzf --fish | source
 fzf_configure_bindings --directory=\ct --variables=\e\cv --git_status=\cs --git_log=\cl
 
 alias vi=nvim
+alias ll="eza -la --header --icons --no-user --git $argv"
