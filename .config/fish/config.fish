@@ -36,3 +36,4 @@ fzf_configure_bindings --directory=\ct --variables=\e\cv --git_status=\cs --git_
 alias vi=nvim
 alias vim=nvim
 alias ll="eza -la --header --icons --no-user --git $argv"
+alias cat=bat
