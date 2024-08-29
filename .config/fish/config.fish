@@ -31,7 +31,7 @@ oh-my-posh --init --shell fish --config ~/.backup/yeraze.omp.json | source
 zoxide init fish | source
 alias cd=z
 fzf --fish | source
-fzf_configure_bindings --directory=\ct --variables=\e\cv --git_status=\cs --git_log=\cl
+fzf_configure_bindings --directory=\ct --variables=\e\cv --git_status=\cs --git_log=\cg
 
 alias vi=nvim
 alias vim=nvim
