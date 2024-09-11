@@ -37,3 +37,5 @@ alias vi=nvim
 alias vim=nvim
 alias ll="eza -la --header --icons --no-user --git $argv"
 alias cat=bat
+
+pfetch
