@@ -38,4 +38,4 @@ alias vim=nvim
 alias ll="eza -la --header --icons --no-user --git $argv"
 alias cat=bat
 
-pfetch
+SHELL=fish EDITOR=nvim PF_INFO="ascii title os host kernel uptime pkgs memory shell editor" pfetch
