@@ -28,3 +28,21 @@ function _fzf_uninstall --on-event fzf_uninstall
     echo "You may need to manually remove fzf_configure_bindings from your config.fish if you were using custom key bindings."
     set_color normal
 end
+
+# Set fzf defaults
+set -l preview_label 'Opt-Arrows: Scroll Preview'
+set -x FZF_DEFAULT_COMMAND fdfind --color=always
+set -x FZF_DEFAULT_OPTS \
+    --ansi \
+    --cycle \
+    --multi \
+    --border \
+    --info=right \
+    --height=89% \
+    --marker=⋅ \
+    --layout=reverse \
+    --preview-label=\"$preview_label\" \
+    --preview-label-pos=-3:bottom \
+    --bind="backward-eof:abort" \
+    --bind='"alt-up:preview-up"' \
+    --bind='"alt-down:preview-down"'
