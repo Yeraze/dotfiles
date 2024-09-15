@@ -1,3 +1,4 @@
+fzf --fish | source
 # fzf.fish is only meant to be used in interactive mode. If not in interactive mode and not in CI, skip the config to speed up shell startup
 if not status is-interactive && test "$CI" != true
     exit
@@ -11,7 +12,8 @@ set --global _fzf_search_vars_command '_fzf_search_variables (set --show | psub)
 
 
 # Install the default bindings, which are mnemonic and minimally conflict with fish's preset bindings
-fzf_configure_bindings
+#fzf_configure_bindings
+fzf_configure_bindings --directory=\ct --variables=\e\cv --git_status=\cs --git_log=\cg
 
 # Doesn't erase autoloaded _fzf_* functions because they are not easily accessible once key bindings are erased
 function _fzf_uninstall --on-event fzf_uninstall
