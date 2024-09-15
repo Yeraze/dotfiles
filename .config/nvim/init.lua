@@ -4,7 +4,7 @@ require("lspconfig").pyright.setup({})
 require("lspconfig").eslint.setup({})
 require("lspconfig").sourcekit.setup({})
 require("lspconfig").clangd.setup({})
-require("lspconfig").perlpls.setup()
+require("lspconfig").perlpls.setup({})
 
 require("mini.surround").setup({
   highlight_duration = 5000,
