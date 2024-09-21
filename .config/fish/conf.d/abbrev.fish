@@ -9,3 +9,5 @@ abbr -a ll "eza -la --header --icons --no-user --git --group-directories-first $
 abbr -a lll "eza -la --header --icons --no-user --git --group-directories-first --git-repos $argv"
 abbr -a cat bat
 abbr -a cd z
+abbr -a ip "curl http://icanhazip.com"
+abbr -a s savvy
