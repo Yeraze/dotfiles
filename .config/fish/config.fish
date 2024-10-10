@@ -8,7 +8,7 @@ thefuck --alias | source
 eval ( pyenv init --path )
 fish_add_path /usr/local/opt/openjdk/bin
 
-oh-my-posh --init --shell fish --config ~/.backup/yeraze.omp.json | source
+oh-my-posh --init --shell fish --config ~/.config/yeraze.omp.json | source
 # enable_poshtransientprompt
 zoxide init fish | source
 
