@@ -16,7 +16,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#c386f1",
+          "background": "#a366d1",
           "leading_diamond": "",
           "trailing_diamond": "",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }}"
