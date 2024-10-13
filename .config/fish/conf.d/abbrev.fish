@@ -11,3 +11,5 @@ abbr -a cat bat
 abbr -a cd z
 abbr -a ip "curl http://icanhazip.com"
 abbr -a s savvy
+abbr -a ws web-search
+abbr -a ddg "web-search duckduckgo"
