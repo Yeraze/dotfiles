@@ -20,7 +20,7 @@ if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
 fi
 
 if ! tmux has-session -t=$selected_name 2>/dev/null; then
-  tmux new-session -ds $selected_name -c $selected "nvim $selected"
+  tmux new-session -ds $selected_name -c $selected -n nvim "nvim $selected"
   tmux neww -t $selected_name
 fi
 
