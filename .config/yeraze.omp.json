@@ -9,7 +9,6 @@
         {
           "style": "diamond",
           "leading_diamond": "\u256d\u2500\ue0b2",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "#000000",
           "background": "#d3d7cf",
           "type": "os"
@@ -202,13 +201,12 @@
       "segments": [
         {
           "style": "plain",
-          "template": "\u2570\u2500",
+          "template": "\n\u2570\u2500",
           "foreground": "#d3d7cf",
           "background": "",
           "type": "text"
         }
-      ],
-      "newline": true
+      ]
     },
     {
       "type": "rprompt",
