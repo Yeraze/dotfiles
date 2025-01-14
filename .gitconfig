@@ -63,3 +63,5 @@ email = randall.hand@gmail.com
     colorMoved = default
 [init]
 	defaultBranch = main
+[http]
+	cookiefile = /Users/rhand/.gitcookies
