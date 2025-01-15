@@ -13,4 +13,5 @@ abbr -a ip "ipinfo myip"
 abbr -a s savvy
 abbr -a ws web-search
 abbr -a ddg "web-search duckduckgo"
-abbr -a weather "curl -s 'wttr.in/{Austin,Miami}?1Fq'"
+abbr -a wtall "curl -s 'wttr.in/{Austin,Miami}?1Fq'"
+abbr -a wt --set-cursor=% "curl 'wttr.in/%?2F'"
