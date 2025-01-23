@@ -14,4 +14,4 @@ abbr -a s savvy
 abbr -a ws web-search
 abbr -a ddg "web-search duckduckgo"
 abbr -a wtall "curl -s 'wttr.in/{Austin,Miami}?1Fq'"
-abbr -a wt --set-cursor=% "curl 'wttr.in/%?2F'"
+abbr -a wt --set-cursor=% "curl 'wttr.in/%?F'"
