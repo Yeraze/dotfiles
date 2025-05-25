@@ -5,3 +5,12 @@ Make sure you have stow installed
 
 Then simply clone this down and within the repo run
 * `stow .`
+
+
+# TMux
+for tmux, make sure you also run
+
+    `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+
+then Prefix-I
+
