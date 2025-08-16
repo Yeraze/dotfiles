@@ -1,5 +1,5 @@
 export PATH=/opt/homebrew/bin:~/bin:${PATH}
-export PATH=/usr/local/krb5/bin:/usr/local/ossh/bin:${PATH}
+export PATH=${PATH}:/usr/local/krb5/bin:/usr/local/ossh/bin
 export PDSH_SSH_ARGS="-o LOGLEVEL=QUIET -x"
 
 PATH="/Users/rhand/perl5/bin${PATH:+:${PATH}}"; export PATH;

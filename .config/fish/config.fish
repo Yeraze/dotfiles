@@ -5,7 +5,7 @@ set -x PATH ~/Library/Python/2.7/bin $PATH
 
 thefuck --alias | source
 
-eval ( pyenv init --path )
+pyenv init - fish | source
 fish_add_path /usr/local/opt/openjdk/bin
 
 oh-my-posh init fish --config ~/.config/yeraze.omp.json | source
