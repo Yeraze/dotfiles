@@ -11,6 +11,7 @@ fish_add_path /usr/local/opt/openjdk/bin
 oh-my-posh init fish --config ~/.config/yeraze.omp.json | source
 # enable_poshtransientprompt
 zoxide init fish | source
+tirith init --shell fish | source
 
 if status --is-login
     SHELL=fish EDITOR=nvim PF_INFO="ascii title os host kernel uptime pkgs memory shell editor" pfetch
